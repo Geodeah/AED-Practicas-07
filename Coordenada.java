@@ -1,4 +1,4 @@
-package Lab01practica.ejercicio;
+package Lab01practica;
 import java.util.*;
 
 public class Coordenada {
@@ -32,19 +32,19 @@ public class Coordenada {
 		this.y = y;
 	}
 	
-	
+	//método de instancia que calcula la distancia euclideana
 	double distancia(Coordenada c){
 		return Math.sqrt(Math.pow(this.x - c.x, 2) + Math.pow(this.y - c.y, 2));
 	}
 	
-	
+	//método de clase que calcula la distancia euclideana
 	static double distancia(Coordenada c1, Coordenada c2){
 		return Math.sqrt(Math.pow(c1.x - c2.x, 2) + Math.pow(c1.y - c2.y, 2));
 	}
-	
+	//método que devuelve los valores de una coordenada en determinado formato
 	@Override
 	public String toString() {
-		return "x=" + x + ", y=" + y ;
+		return "[x=" + x + ", y=" + y + "]";
 	}
 	
 }

@@ -1,11 +1,11 @@
-package Lab01practica.ejercicio;
+package Lab01practica;
 import java.util.*;
 
 public class Rectangulo {
 	private Coordenada esquina1;
 	 private Coordenada esquina2;
 
-	 
+	 // Constructor
 	 public Rectangulo(Coordenada c1, Coordenada c2) {
 	 setEsquina1(c1);
 	 setEsquina2(c2);
@@ -40,7 +40,7 @@ public class Rectangulo {
 
 	@Override
 	public String toString() {
-		return "([" + esquina1 +"]" + ","+ "[" + esquina2 + "])";
+		return "([" + esquina1 + "," + esquina2 + "])";
 	}
 
 }
