@@ -1,7 +1,7 @@
 package Lab05practica.ejercicios;
 
 public class Ejercicio4 {
-	// Método genérico que cuenta el número de nodos en una lista enlazada
+	
 	public static <T> int contarNodos(Node<T> head) {
 		int contador = 0;
 		Node<T> actual = head;
@@ -14,7 +14,7 @@ public class Ejercicio4 {
 		return contador;
 	}
 
-	// Método de prueba
+	
 	public static void main(String[] args) {
 		Node<String> lista = null;
 
@@ -22,10 +22,10 @@ public class Ejercicio4 {
 		lista = insertarAlFinal(lista, "Estudiar");
 		lista = insertarAlFinal(lista, "Dormir");
 
-		System.out.println("Total de nodos: " + contarNodos(lista)); // Debería imprimir 3
+		System.out.println("Total de nodos: " + contarNodos(lista)); 
 	}
 
-	// Método auxiliar de ejercicios anteriores
+	
 	public static <T> Node<T> insertarAlFinal(Node<T> head, T valor) {
 		Node<T> nuevo = new Node<>(valor);
 		if (head == null) {
