@@ -13,11 +13,11 @@ public class Ejercicio5 {
 			actual2 = actual2.next;
 		}
 
-		// Si ambas listas llegaron al final, son iguales
+		
 		return actual1 == null && actual2 == null;
 	}
 
-	// Método de prueba
+	
 	public static void main(String[] args) {
 		Node<String> lista1 = null;
 		Node<String> lista2 = null;
@@ -28,14 +28,14 @@ public class Ejercicio5 {
 		lista2 = insertarAlFinal(lista2, "Comprar");
 		lista2 = insertarAlFinal(lista2, "Estudiar");
 
-		System.out.println("¿Listas iguales? " + sonIguales(lista1, lista2)); // true
+		System.out.println("¿Listas iguales? " + sonIguales(lista1, lista2)); 
 
 		lista2 = insertarAlFinal(lista2, "Dormir");
 		
-		System.out.println("¿Listas iguales? " + sonIguales(lista1, lista2)); // false
+		System.out.println("¿Listas iguales? " + sonIguales(lista1, lista2));
 	}
 
-	// Método auxiliar de ejercicios anteriores
+	
 	public static <T> Node<T> insertarAlFinal(Node<T> head, T valor) {
 		Node<T> nuevo = new Node<>(valor);
 		if (head == null) {
